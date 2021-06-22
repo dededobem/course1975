@@ -22,7 +22,7 @@ namespace PaymentContext.Tests.Entities
             _document = new Document("01786171562", EDocumentType.CPF);
             _email = new Email("dededobem@gmail.com");
             _address = new Address("Rua x", "10", "Bairro feliz", "FSA", "BA", "Brasil", "44125000");
-            _subscription = new Subscription(null, true);
+            _subscription = new Subscription(null);
             _student = new Student(_name, _document, _email);            
             _payment = new PayPalPayment(
                 "123456", 

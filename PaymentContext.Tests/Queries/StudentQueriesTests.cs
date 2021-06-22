@@ -3,7 +3,6 @@ using System.Linq;
 using PaymentContext.Domain.Entities;
 using PaymentContext.Domain.Enums;
 using PaymentContext.Domain.Queries;
-using PaymentContext.Domain.Services;
 using PyamentContext.Domain.ValueObjects;
 using Xunit;
 

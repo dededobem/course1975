@@ -50,7 +50,7 @@ namespace PaymentContext.Domain.Handlers
                 command.Country, 
                 command.ZipCode);
             
-            var subscription = new Subscription(null, true);
+            var subscription = new Subscription(null);
             var student = new Student(name, document, email);          
             var payment = new BoletoPayment(
                 command.BarCode, 

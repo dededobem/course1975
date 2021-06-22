@@ -10,12 +10,12 @@ namespace PaymentContext.Domain.Entities
     public class Subscription : Entity
     {
         private IList<Payment> _payments;
-        public Subscription(DateTime? expireDate, bool active)
+        public Subscription(DateTime? expireDate)
         {
             CreateDate = DateTime.Now;
             LastUpdateDate = DateTime.Now;
             ExpireDate = expireDate;
-            Active = active;
+            Active = true;
             _payments = new List<Payment>();
         }
 
